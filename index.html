@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OLX Categories Clone</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+
+    h2 {
+      text-align: center;
+      color: #00303f;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .category {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .category-icon {
+      background-color: #fdd; /* default fallback */
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .category-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .category-name {
+      font-size: 14px;
+      color: #000;
+      font-weight: 500;
+    }
+
+    /* Different background colors */
+    .mobiles     { background-color: #ff604f; }
+    .vehicles    { background-color: #fdbb72; }
+    .sale        { background-color: #f3a68c; }
+    .rent        { background-color: #6a85f1; }
+    .electronics { background-color: #fff2c6; }
+    .bikes       { background-color: #5ae1dd; }
+    .agriculture { background-color: #b9f1f1; }
+    .services    { background-color: #ffd3d3; }
+    .jobs        { background-color: #66e1db; }
+    .animals     { background-color: #ffe75a; }
+    .furniture   { background-color: #ff7961; }
+    .fashion     { background-color: #d4e3ff; }
+    .books       { background-color: #ffb2a6; }
+    .kids        { background-color: #ffb6b9; }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align: left;">All categories</h2>
+
+  <div class="categories">
+    <div class="category">
+      <div class="category-icon mobiles">
+        <img src="https://www.olx.com.pk/assets/mobiles.8c768c96bfde33f18fcf5af2a8b9cf71.png" height="500px" width="500px"> 
+      </div>
+      <div class="category-name">Mobiles</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon vehicles">
+        <img src="https://www.olx.com.pk/assets/vehicles.29fb808d5118f0db56f68a39ce5392e2.png">
+      </div>
+      <div class="category-name">Vehicles</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon sale">
+        <img src="https://www.olx.com.pk/assets/property-for-sale.e3a00dbfdaa69fe5f713665f1069502f.png">
+      </div>
+      <div class="category-name">Property For Sale</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon rent">
+        <img src="https://www.olx.com.pk/assets/property-for-rent.8436595fbaa90d47f0178006f57090a8.png">
+      </div>
+      <div class="category-name">Property For Rent</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon electronics">
+        <img src="https://www.olx.com.pk/assets/electronics-home-appliances.46e034dd8adca44625c2c70e4d1b5984.png">
+      </div>
+      <div class="category-name">Electronics & Home Appliances</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon bikes">
+        <img src="https://www.olx.com.pk/assets/bikes.4dcd02c49b2b83aa5b4d629d1e2b383e.png">
+      </div>
+      <div class="category-name">Bikes</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon agriculture">
+        <img src="https://www.olx.com.pk/assets/business-industrial-agriculture.704a6ffb9081bc94b11c102cc613670f.png">
+      </div>
+      <div class="category-name">Business, Industrial & Agriculture</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon services">
+        <img src="https://www.olx.com.pk/assets/services.dc6aef196c0403dc61b0ee813f66fa5b.png">
+      </div>
+      <div class="category-name">Services</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon jobs">
+        <img src="https://www.olx.com.pk/assets/jobs.79e6136dda02111cf8e7afe26b9e0f93.png">
+      </div>
+      <div class="category-name">Jobs</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon animals">
+        <img src="https://www.olx.com.pk/assets/animals.62d396e85f7523dbc8ff23889fdd5c31.png">
+      </div>
+      <div class="category-name">Animals</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon furniture">
+        <img src="https://www.olx.com.pk/assets/furniture-home-decor.66bcf157a53ea4c736a5b0af41219475.png">
+      </div>
+      <div class="category-name">Furniture & Home Decor</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon fashion">
+        <img src="https://www.olx.com.pk/assets/fashion-beauty.dd2cf7638c29b0e5c084a6673dd94dd7.png">
+      </div>
+      <div class="category-name">Fashion & Beauty</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon books">
+        <img src="https://www.olx.com.pk/assets/books-sports-hobbies.6fee8d841b332d65a10f050f4a2ee1c8.png">
+      </div>
+      <div class="category-name">Books, Sports & Hobbies</div>
+    </div>
+
+    <div class="category">
+      <div class="category-icon kids">
+        <img src="https://www.olx.com.pk/assets/kids.cd8d8864804f1c35dd6a7df68268a48d.png">
+      </div>
+      <div class="category-name">Kids</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .header a {
+            color: #00aaff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .product-grid {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            width: 200px;
+            flex-shrink: 0;
+            text-align: left;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .product-card .price {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .product-card .name {
+            font-size: 14px;
+            color: #333;
+            margin: 0 10px;
+        }
+        .product-card .location {
+            font-size: 12px;
+            color: #666;
+            margin: 5px 10px;
+        }
+        .heart-icon {
+            position: absolute;
+            top: 160px;
+            right: 10px;
+            font-size: 20px;
+            color: #666;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>MORE IN MOBILES</h2>
+            <a href="#">VIEW MORE</a>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.olx.com.pk/thumbnails/536009268-800x600.webp" alt="iPhone 11 pro">
+                <div class="price">Rs 101,000</div>
+                <div class="name">iPhone 11 pro pta</div>
+                <div class="location">Green Town, Lahore<br>4 days ago</div>
+                <span class="heart-icon">♡</span>
+            </div>
+            <div class="product-card">
+                <img src="https://images.olx.com.pk/thumbnails/536009262-800x600.webp" alt="iPhone 15 plus">
+                <div class="price">Rs 130,000</div>
+                <div class="name">iPhone 15 plus jv</div>
+                <div class="location">Shami Road, Peshawar<br>4 days ago</div>
+                <span class="heart-icon">♡</span>
+            </div>
+            <div class="product-card">
+                <img src="https://images.olx.com.pk/thumbnails/529649277-800x600.webp" alt="Infinix note 10">
+                <div class="price">Rs 23,000</div>
+                <div class="name">Infinix note 10 pro gaming set</div>
+                <div class="location">G-6/1, Islamabad<br>4 days ago</div>
+                <span class="heart-icon">♡</span>
+           </div>
+            <div class="product-card">
+                <img src="https://images.olx.com.pk/thumbnails/536168336-800x600.webp" alt="Moto one action">
+                <div class="price">Rs 15,000</div>
+                <div class="name">Moto one action 4.128 dual SIM PTA approved for gaming and camera</div>
+                <div class="location">Manghopir Road, Karachi<br>4 days ago</div>
+                <span class="heart-icon">♡</span>
+            </div>
+            <div class="product-card">
+                <img src="https://images.olx.com.pk/thumbnails/536009262-800x600.webp" alt="iPhone 15 plus">
+                <div class="price">Rs 130,000</div>
+                <div class="name">iPhone 15 plus jv</div>
+                <div class="location">Shami Road, Peshawar<br>4 days ago</div>
+                <span class="heart-icon">♡</span>
+            </div>
+            <div class="product-card">
+                <img src="https://images.olx.com.pk/thumbnails/536009262-800x600.webp" alt="iPhone 15 plus">
+                <div class="price">Rs 130,000</div>
+                <div class="name">iPhone 15 plus jv</div>
+                <div class="location">Shami Road, Peshawar<br>4 days ago</div>
+                <span class="heart-icon">♡</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Promotion Footer</title>
+    <style>
+        .app-footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .app-image {
+            width: 440px;
+            height: 200;
+            margin-right: 20px;
+        }
+        .app-text {
+            flex-grow: 1;
+        }
+        .app-text h2 {
+            font-size: 20px;
+            margin: 0 0 10px 0;
+        }
+        .app-text p {
+            font-size: 14px;
+            margin: 0;
+        }
+        .app-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .app-buttons img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-footer">
+        <img src="https://www.olx.com.pk/assets/olxMobileApp.f5579f77e849b600ad60857e46165516.webp" alt="OLX App" class="app-image">
+        <div class="app-text">
+            <h2>TRY THE OLX APP</h2>
+            <p>Buy, sell and find just about anything using <br>the app on your mobile.</p>
+        </div>
+        <div class="app-buttons">
+            <img src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg" alt="App Store">
+            <img src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg" alt="Google Play">
+            <img src="https://www.olx.com.pk/assets/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg" alt="AppGallery">
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html></body>
+</html>
